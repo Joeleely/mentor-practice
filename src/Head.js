@@ -7,11 +7,13 @@ function Header() {
   return (
     <div className="fixed-top" >
       <Navbar dark color="dark">
-        <div className="container d-flex">
-        <img style={{width:"5vh"}} src="https://www.pngplay.com/wp-content/uploads/12/Spotify-Logo-Transparent-Images.png"></img>
-          <div className="ms-2 col-lg-12 fw-bold fs-3">
-            <div class="text-light d-flex">Spotify</div>
+        <div className="d-flex">
+          <img style={{ width: "5vh" }} src="https://play-lh.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w512"></img>
+          <div className="ms-2 fw-bold fs-3">
+            <div className="text-light d-flex">Spotify</div>
           </div>
+        </div>
+        <div className="d-flex">
           <button className="btn btn-dark me-2">Home</button>
           <button className="btn btn-dark">Login</button>
           <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
@@ -28,7 +30,7 @@ function Header() {
             </ul>
           </div>
         </div>
-      </Navbar>
+      </Navbar >
     </div>
   );
 }
