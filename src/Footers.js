@@ -3,12 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Card } from "reactstrap";
 import './App.css';
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
         <div className="d-flex">
             <div className="d-flex card bg-light p-3" style={{ width: "50vh" }}>
-                <img style={{ width: "10vh" }} className="rounded mx-auto d-block" src="https://play-lh.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w512"></img>
+                <img style={{ width: "10vh" }} className="rounded mx-auto d-block" src="https://spotlightstudio.org/wp-content/uploads/2019/12/image-gallery-spotify-logo-21.png"></img>
                 <h4 className="text-center mb-5 mx-5 mt-1">Welcome to spotify</h4>
                 <div className="mb-3">Please login to your account</div>
                 <form className="d-flex">
@@ -17,9 +18,10 @@ function Footer() {
                 <form className="d-flex">
                     <input type="password" className="form-control mb-4" placeholder="Password"></input>
                 </form>
-                <button className="btn gradient-custom-2 text-light mb-2">Login</button>
+                <Link style={{height:"auto"}} className="btn gradient-custom-2 text-light mb-2" to="/song"><button className="btn text-white">Login</button></Link>
                 <a href="#" className="text-secondary text-center text-decoration-none mb-4">Forgot password?</a>
-                <div className="d-flex">Don't have an account?<a href="#" className="text-decoration-none ms-2">Register</a></div>
+                <div className="d-flex">Don't have an account?
+                <a href="#" className="text-decoration-none ms-2">Register</a></div>
             </div>
             <div className="d-flex">
                 <div className="d-flex card bg-light p-5" style={{ width: "40vh" }}>
